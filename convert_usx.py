@@ -1,22 +1,51 @@
 import subprocess
-import pathlib
+from pathlib import Path
 
-INPUT_DIR = pathlib.Path("raw_usfm")
-OUTPUT_DIR = pathlib.Path("usx")
+ROOT = Path("/home/nathan/Documents/GHT/toUSFM")
 
-OUTPUT_DIR.mkdir(exist_ok=True)
+USFMTC = ROOT / ".usfmtc/venv/bin/usfmconv"
 
-for usfm in INPUT_DIR.glob("*.usfm"):
-    out = OUTPUT_DIR / (usfm.stem + ".usx")
+FOLDERS = ["ght_usfm", "ghtg_usfm"]
 
-    cmd = [
-        "usfmtc",
-        str(usfm),
-        str(out)
-    ]
 
-    print("Converting:", usfm.name)
-    subprocess.run(cmd, check=True)
+def run(cmd):
+    result = subprocess.run(cmd, capture_output=True, text=True)
+    return result.returncode, result.stdout, result.stderr
 
-print("Done.")
+
+for folder in FOLDERS:
+
+    in_dir = ROOT / folder
+    out_dir = Path(folder.replace("_usfm", "_usx"))
+    out_dir.mkdir(exist_ok=True)
+
+    files = sorted(in_dir.glob("*.usfm"))
+
+    print(f"\n=== Processing {folder} ({len(files)} files) ===")
+
+    for f in files:
+
+        out_file = out_dir / (f.stem + ".usx")
+
+        print(f"{f.name} → {out_file.name}")
+
+        cmd = [
+            str(USFMTC),
+            str(f),
+            "-o", str(out_file),
+            "-F", "usx",
+        ]
+
+        code, out, err = run(cmd)
+
+        if code != 0:
+            print("FAILED")
+            print(err.strip() or out.strip())
+        else:
+            if not out_file.exists():
+                print("⚠ Converted but file missing:", out_file)
+            else:
+                print("OK")
+
+print("\nDone.")
 

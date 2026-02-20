@@ -101,8 +101,29 @@ def export(conn, filename, text_column, order_column, booklist, abbrev):
     books = defaultdict(lambda: defaultdict(lambda: defaultdict(list)))
 
     for word, uid, guid in cur:
-        b, c, v = parse_uid(uid)
-        books[b][c][v].append(word)
+
+        # skip empty text
+        if not word:
+            continue
+
+        word = word.strip()
+
+        # skip blanks / placeholders
+        if not word or word == "_":
+            continue
+
+        # skip malformed uid rows
+        try:
+            b, c, v = parse_uid(uid)
+        except Exception:
+            continue
+
+        # prevent accidental duplicates
+        verse_words = books[b][c][v]
+        if verse_words and verse_words[-1] == word:
+            continue
+
+        verse_words.append(word)
 
     os.makedirs(filename, exist_ok=True)
 

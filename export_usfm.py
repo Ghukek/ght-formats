@@ -149,8 +149,8 @@ def export(conn, filename, text_column, order_column, booklist, abbrev):
 # -------------------------
 conn = sqlite3.connect(DB_PATH)
 
-export(conn, "raw_usfm", "raw", "uid", BOOKS_EN, "GHT")
-export(conn, "greek_usfm", "greek", "guid", BOOKS_GR, "GHTG")
+export(conn, "ght_usfm", "raw", "uid", BOOKS_EN, "GHT")
+export(conn, "ghtg_usfm", "greek", "guid", BOOKS_GR, "GHTG")
 
 conn.close()
 

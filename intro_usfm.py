@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 import os
 
 URL = "https://www.wiebefamily.org/GHT.htm"
-OUTDIR = "raw_usfm"
+OUTDIR = "ght_usfm"
 OUTFILE = "A7INT.usfm"
 
 

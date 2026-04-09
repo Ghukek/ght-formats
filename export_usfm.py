@@ -32,7 +32,7 @@ BOOKS_EN = [
     ("2TI", "2 Timothy", "Toward Timothy, Beta"), ("TIT", "Titus", "Toward Titus"), ("PHM", "Philemon", "Toward Philemon"),
     ("HEB", "Hebrews", "Toward Hebrews"), ("JAS", "James", "[James]"), ("1PE", "1 Peter", "[1 Peter]"),
     ("2PE", "2 Peter", "[2 Peter]"), ("1JN", "1 John", "[1 John]"), ("2JN", "2 John", "[2 John]"),
-    ("3JN", "3 John", "[1 John]"), ("JUD", "Jude", "[Jude]"), ("REV", "Revelation", "[Revelation]")
+    ("3JN", "3 John", "[3 John]"), ("JUD", "Jude", "[Jude]"), ("REV", "Revelation", "[Revelation]")
 ]
 
 # --- Full canonical book list (ID, Name, order) ---
@@ -130,10 +130,6 @@ def export(conn, filename, text_column, order_column, booklist, abbrev):
     for book_num in sorted(books):
 
         index_offset = 1
-
-        if book_num > 39:
-            book_num += 1
-            index_offset += 1
 
         book_id, book_short, book_name = booklist[book_num - index_offset]
         outname = f"{book_num:02d}{book_id}{abbrev}.usfm"

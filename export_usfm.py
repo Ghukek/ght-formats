@@ -106,6 +106,10 @@ def export(conn, filename, text_column, order_column, booklist, abbrev):
         if not word:
             continue
 
+        # skip "none" for Greek
+        if text_column == "greek" and word == "none":
+            continue
+
         word = word.strip()
 
         # skip blanks / placeholders

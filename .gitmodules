@@ -1,0 +1,3 @@
+[submodule "u2o"]
+	path = u2o
+	url = https://github.com/adyeths/u2o

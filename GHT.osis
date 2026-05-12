@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<osis xmlns="http://www.bibletechnologies.net/2003/OSIS/namespace" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.bibletechnologies.net/2003/OSIS/namespace http://www.bibletechnologies.net/osisCore.2.1.1.xsd">
+  <osisText osisIDWork="GHT" osisRefWork="Bible" xml:lang="und">
+    <header>
+      <revisionDesc resp="nathan">
+        <date>2026.05.12T18.06.55</date>
+        <p>Converted from USFM source using u2o.py</p>
+      </revisionDesc>
+      <work osisWork="GHT">
+        <title>GHT</title>
+        <type type="OSIS">Bible</type>
+        <identifier type="OSIS">Bible.und.GHT</identifier>
+        <refSystem>Bible</refSystem>
+      </work>
+    </header>
+  </osisText>
+</osis>

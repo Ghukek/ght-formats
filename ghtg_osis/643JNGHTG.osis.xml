@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<osis xmlns="http://www.bibletechnologies.net/2003/OSIS/namespace" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.bibletechnologies.net/2003/OSIS/namespace http://www.bibletechnologies.net/osisCore.2.1.1.xsd">
+  <osisText osisIDWork="GHTG" osisRefWork="Bible" xml:lang="und">
+    <header>
+      <revisionDesc resp="nathan">
+        <date>2026.05.12T18.19.16</date>
+        <p>Converted from USFM source using u2o.py</p>
+      </revisionDesc>
+      <work osisWork="GHTG">
+        <title>GHTG</title>
+        <description type="usfm" subType="x-id">3JN</description>
+        <type type="OSIS">Bible</type>
+        <identifier type="OSIS">Bible.und.GHTG</identifier>
+        <refSystem>Bible</refSystem>
+      </work>
+    </header>
+    <div type="book" osisID="3John" canonical="true"><!-- usfm - 3.0 --><milestone type="x-usfm-h" n="[3 John]"/><milestone type="x-usfm-toc1" n="[3 John]"/><milestone type="x-usfm-toc2" n="3 John"/><!-- mt1 --><title level="1" type="main">[3 John]</title><chapter sID="3John.1" osisID="3John.1" n="1"/><verse sID="3John.1.1" osisID="3John.1.1" n="1"/>ο πρεσβυτερος γαιω τω αγαπητω ον εγω αγαπω εν αληθεια <verse eID="3John.1.1"/> <verse sID="3John.1.2" osisID="3John.1.2" n="2"/>αγαπητε περι παντων ευχομαι σε ευοδουσθαι και υγιαινειν καθως ευοδουται σου η ψυχη <verse eID="3John.1.2"/> <verse sID="3John.1.3" osisID="3John.1.3" n="3"/>εχαρην γαρ λιαν ερχομενων αδελφων και μαρτυρουντων σου τη αληθεια καθως συ εν αληθεια περιπατεις <verse eID="3John.1.3"/> <verse sID="3John.1.4" osisID="3John.1.4" n="4"/>μειζοτεραν τουτων ουκ εχω χαραν ινα ακουω τα εμα τεκνα εν αληθεια περιπατουντα <verse eID="3John.1.4"/> <verse sID="3John.1.5" osisID="3John.1.5" n="5"/>αγαπητε πιστον ποιεις ο εαν εργαση εις τους αδελφους και εις τους ξενους <verse eID="3John.1.5"/> <verse sID="3John.1.6" osisID="3John.1.6" n="6"/>οι εμαρτυρησαν σου τη αγαπη ενωπιον εκκλησιας ους καλως ποιησεις προπεμψας αξιως του θεου <verse eID="3John.1.6"/> <verse sID="3John.1.7" osisID="3John.1.7" n="7"/>υπερ γαρ του ονοματος εξηλθον μηδεν λαμβανοντες απο των εθνων <verse eID="3John.1.7"/> <verse sID="3John.1.8" osisID="3John.1.8" n="8"/>ημεις ουν οφειλομεν υπολαμβανειν τους τοιουτους ινα συνεργοι γινωμεθα τη αληθεια <verse eID="3John.1.8"/> <verse sID="3John.1.9" osisID="3John.1.9" n="9"/>εγραψα τη εκκλησια αλλ ο φιλοπρωτευων αυτων διοτρεφης ουκ επιδεχεται ημας <verse eID="3John.1.9"/> <verse sID="3John.1.10" osisID="3John.1.10" n="10"/>δια τουτο εαν ελθω υπομνησω αυτου τα εργα α ποιει λογοις πονηροις φλυαρων ημας και μη αρκουμενος επι τουτοις ουτε αυτος επιδεχεται τους αδελφους και τους βουλομενους κωλυει και εκ της εκκλησιας εκβαλλει <verse eID="3John.1.10"/> <verse sID="3John.1.11" osisID="3John.1.11" n="11"/>αγαπητε μη μιμου το κακον αλλα το αγαθον ο αγαθοποιων εκ του θεου εστιν ο κακοποιων ουχ εωρακεν τον θεον <verse eID="3John.1.11"/> <verse sID="3John.1.12" osisID="3John.1.12" n="12"/>δημητριω μεμαρτυρηται υπο παντων και υπ αυτης της αληθειας και ημεις δε μαρτυρουμεν και οιδας οτι η μαρτυρια ημων αληθης εστιν <verse eID="3John.1.12"/> <verse sID="3John.1.13" osisID="3John.1.13" n="13"/>πολλα ειχον γραψαι σοι αλλ ου θελω δια μελανος και καλαμου σοι γραφειν <verse eID="3John.1.13"/> <verse sID="3John.1.14" osisID="3John.1.14" n="14"/>ελπιζω δε ευθεως ιδειν σε και στομα προς στομα λαλησομεν ειρηνη σοι ασπαζονται σε οι φιλοι ασπαζου τους φιλους κατ ονομα <verse eID="3John.1.14"/> <chapter eID="3John.1"/> </div>
+  </osisText>
+</osis>

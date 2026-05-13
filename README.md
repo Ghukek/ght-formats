@@ -8,4 +8,4 @@ In run.sh, replace "../concordance.db" with the location of your source sqlite f
 
 Unfortunately, .bbli creation is not automated and will require use of eSword's conversion tool.
 
-For OSIS conversion, I am grateful to adyeths for granting u2o to the Public Domain so that I can include it in this repository with no problems. Source: https://github.com/adyeths/u2o Retrieved: 12 May 2026
+For OSIS conversion, I am grateful to adyeths for granting u2o to the Public Domain so that I can include it in this repository with no problems. Source: https://github.com/adyeths/u2o 

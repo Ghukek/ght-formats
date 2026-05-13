@@ -9,6 +9,11 @@ if len(sys.argv) < 2:
 
 DB_PATH = sys.argv[1]
 
+para = False
+
+if len(sys.argv) > 2:
+    para = sys.argv[2].lower() in ("true", "1", "yes", "y")
+
 # --- Full canonical book list (ID, Name, order) ---
 BOOKS_EN = [
     ("GEN", "Genesis", ""), ("EXO", "Exodus", ""), ("LEV", "Leviticus", ""),
@@ -154,6 +159,8 @@ def export(conn, filename, text_column, order_column, booklist, abbrev):
             chapters = books[book_num]
 
             for chapter in sorted(chapters):
+                if para:
+                    f.write(f"\\p\n")
                 f.write(f"\\c {chapter}\n")
 
                 verses = chapters[chapter]

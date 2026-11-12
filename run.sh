@@ -16,10 +16,14 @@ python3 export_usfm.py concordance.db
 #  python3 ./u2o/u2o.py GHTG "$f" -o "./ghtg_osis/${base}.osis.xml"
 #done
 
-python3 ./u2o/u2o.py -l en GHT ./ght_usfm/*.usfm -o ./GHT.osis.xml
-python3 ./u2o/u2o.py -l grc GHTG ./ghtg_usfm/*.usfm -o ./GHTG.osis.xml
+python3 ./u2o/u2o.py -l en GHT ./ght_usfm/*.usfm -o ./ght.osis.xml
+python3 ./u2o/u2o.py -l grc GHTG ./ghtg_usfm/*.usfm -o ./ghtg.osis.xml
 
 python3 convert_usx.py 
 python3 eswordexport.py
+
+#Added to watch for any error flags.
+osis2mod ../OSIS/ ghtg.conf
+osis2mod ../OSIS/ ght.conf
 
 echo "Finished."

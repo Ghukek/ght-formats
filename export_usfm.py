@@ -129,7 +129,7 @@ def export(conn, filename, text_column, order_column, booklist, abbrev):
 
         # prevent accidental duplicates
         verse_words = books[b][c][v]
-        if verse_words and verse_words[-1] == word:
+        if "_" in word and verse_words and verse_words[-1] == word:
             continue
 
         verse_words.append(word)
